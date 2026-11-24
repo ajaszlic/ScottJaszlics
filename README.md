@@ -3,7 +3,7 @@ Scott Jaszlics is a multi-page portfolio webpage with the pages of Home, About, 
 The HTML is semantic and validated.
 The CSS is Responsive.
 There is no Javascript.
-The Website is https://github.com/ajaszlic/ScottJaszlics
+The Website is https://ajaszlic.github.io/ScottJaszlics/
 
 
 
