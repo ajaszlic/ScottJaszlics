@@ -8,11 +8,13 @@ Slate Blue #91B7D9
 Biegeish #DDD9D5    
 */
 /* GLOBAL (base) MOBILE FIRST */
-body { background-color: #91B7D9;
+body { background-color: #DDD9D5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 header {
-    background-color: #1755A6;
+    background-color:#91B7D9;
     text-align: center;
     padding: 1.5rem;
 }
@@ -23,7 +25,6 @@ header h1 {
 
 header p {
     margin-top: 0.5rem;
-    color: #1755A6;
 }
 
 nav {
@@ -56,6 +57,7 @@ main {
 }
 
 .card-row section {
+    color: #DDD9D5;
     background-color: #0339A6;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -80,6 +82,7 @@ img {
 }
 
 #About, #Resume, #Projects, #Contact {
+    color: #DDD9D5;
     background-color: #91B7D9;
     padding: 1rem;
     padding: 1rem;
