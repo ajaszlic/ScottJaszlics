@@ -10,3 +10,132 @@ Biegeish #DDD9D5
 /* GLOBAL (base) MOBILE FIRST */
 body { background-color: #91B7D9;
 }
+
+header {
+    background-color: #1755A6;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: #1755A6;
+}
+
+nav {
+    background-color:#6A9AD9;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #DDD9D5;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    border-left: 4px solid  #0339A6;
+    border-right: 4px solid  #0339A6;
+    margin: .25rem;
+}
+
+nav a:hover {
+    background-color: #1755A6;
+}
+
+main {
+    padding: 1rem;
+}
+
+.card-row section {
+    background-color: #0339A6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+main a {
+    color: #DDD9D5;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-left: 4px solid  #0339A6;
+    border-right: 4px solid  #0339A6;
+    margin: .25rem;
+}
+
+main a:hover {
+    background-color: #1755A6;
+}
+
+img {
+    width:100%;
+}
+
+#About, #Resume, #Projects, #Contact {
+    background-color: #91B7D9;
+    padding: 1rem;
+    padding: 1rem;
+    border-left: 4px solid  #0339A6;
+    border-right: 4px solid  #0339A6; 
+}
+
+ul {
+    
+    background-color: #DDD9D5;
+    padding: 1rem;  
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+a {
+    display:block;
+    background-color:#1755A6;
+    color:#DDD9D5;
+    padding:1rem 2rem;
+    text-decoration:none;
+    text-align:center;
+    text-transform: uppercase;
+}
+a:hover {
+    color:#DDD9D5;
+    background-color:#1755A6;
+}
+
+footer {
+    background-color: #91B7D9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* ===== Media Query (Medium) ===== */
+    @media screen and (min-width: 650px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card-row {
+        display:flex;
+        gap:1rem;
+    }
+
+    .card-row section {
+        width:30%;
+    }
+}
+/* write a media query for a screen with at least 800px */
+/* change the body's grid template to 1fr 300px */
+/* target the header, nav, and footer and style their grid-column to 1/-1 */
+/* target the nav and display it flex, spaceed around */
+/* target the .card-row to display flex */
+/* target the sections in .card-row witha width for 30% */
