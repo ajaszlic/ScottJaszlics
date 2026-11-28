@@ -8,11 +8,16 @@ Slate Blue #91B7D9
 Biegeish #DDD9D5    
 */
 /* GLOBAL (base) MOBILE FIRST */
-body { background-color: #DDD9D5;
+body {
+    grid-template-columns: 1fr;
+    background-color: #DDD9D5;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    display: grid;
 }
-
+#header, #nav, #footer {
+    grid-column: 1 / -1;
+}
 header {
     background-color:#91B7D9;
     text-align: center;
@@ -24,27 +29,37 @@ header h1 {
 }
 
 header p {
-    margin-top: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-indent: 1rem;
 }
 
 nav {
     background-color:#6A9AD9;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-around;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
+    border-left: 4px solid  #0339A6;
+    border-right: 4px solid  #0339A6;
+    border-top: 4px solid  #0339A6;
+    border-bottom: 4px solid  #0339A6;
+
 }
 
 nav a {
     color: #DDD9D5;
+    flex: 1;
     text-decoration: none;
-    padding: 0.5rem;
-    display: inline-block;
+    padding: 1rem;
+    text-align: center;
     text-transform: uppercase;
-    border-left: 4px solid  #0339A6;
-    border-right: 4px solid  #0339A6;
     margin: .25rem;
 }
 
@@ -66,7 +81,7 @@ main {
 main a {
     color: #DDD9D5;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 1rem;
     display: block;
     border-left: 4px solid  #0339A6;
     border-right: 4px solid  #0339A6;
@@ -78,7 +93,9 @@ main a:hover {
 }
 
 img {
-    width:100%;
+    width:75%;
+    margin: 0 auto;
+    display: block;
 }
 
 #About, #Resume, #Projects, #Contact {
@@ -89,7 +106,15 @@ img {
     border-left: 4px solid  #0339A6;
     border-right: 4px solid  #0339A6; 
 }
-
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+}
 ul {
     
     background-color: #DDD9D5;
@@ -139,6 +164,4 @@ footer {
 /* write a media query for a screen with at least 800px */
 /* change the body's grid template to 1fr 300px */
 /* target the header, nav, and footer and style their grid-column to 1/-1 */
-/* target the nav and display it flex, spaceed around */
-/* target the .card-row to display flex */
-/* target the sections in .card-row witha width for 30% */
+ 
