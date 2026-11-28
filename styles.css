@@ -98,7 +98,7 @@ img {
     display: block;
 }
 
-#About, #Resume, #Projects, #Contact {
+#About, #Resume, #Projects {
     color: #DDD9D5;
     background-color: #91B7D9;
     padding: 1rem;
@@ -109,6 +109,12 @@ img {
 h2 {
     text-align: center;
     margin-top: 0;
+}
+#contact {
+    background-color: #6A9AD9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 p {
     line-height: 1.5;
@@ -144,6 +150,8 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
 }
+
+
 
 /* ===== Media Query (Medium) ===== */
     @media screen and (min-width: 650px) {
